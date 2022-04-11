@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('http://fonts.cdnfonts.com/css/mystical-snow');
+@import url('http://fonts.cdnfonts.com/css/brave-gates-personal-use');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    background-color: rgb(3, 113, 119);
+    padding: 0px 10%;
+}
+
+.logo{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container{
+    display: block;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials-icons{
+    height: 5vh;
+    width: 8vh;
+}
+
+.socials li{
+    list-style: none;
+}
+
+.socials a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.socials a:hover{
+    color: rgb(2, 81, 85);
+}
+
+.search-box{
+    display: flex;
+    margin-top: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    font-size: 16px;
+    color: black;
+    height: 30px;
+    width: 90%;
+}
+
+.search-btn{
+    float: right;
+    height: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(2, 81, 85);
+    padding: 0 2%;
+}
+
+.quote{
+    font-family: 'Mystical Snow', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 14px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.nav-links li a:hover{
+    color: rgb(11, 185, 194);
+    background-color: rgb(0, 45, 48);
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu div{
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+.body-content{
+    position: relative;
+    height: 73vh;
+    width: 100%;
+}
+
+.back-pic{
+    height: 73vh;
+    width: 100%;
+}
+
+.bk-pic{
+    height: 100%;
+    width: 100%;
+}
+
+.body-text{
+    font-family: 'Brave Gates Personal use', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.text1{
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+
+.text2{
+    position: absolute;
+    top: 110px;
+    left: 230px;
+}
+
+.text3{
+    position: absolute;
+    top: 180px;
+    left: 110px;
+}
+
+.search-trip{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 70%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.search-trip-text{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+select{
+    display: flex;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.dropdowns{
+    display: flex;
+    line-height: 3;
+    border-radius: .25em;
+}
+
+.drop-down{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 15em;
+    height: 2em;
+    margin-left: 30px;
+}
+
+.srch-container{
+    display: flex;
+    width: 2em;
+    height: 2em;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: .25em;
+    align-items: center;
+}
+
+.search-btn-trip{
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.blog{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(173, 173, 173);
+    padding: 0px 10%;
+}
+
+.blog-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.blog-image-container{
+    height: 200px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:700px){
+    body{
+        overflow-x: hidden;
+        /* overflow-y: hidden; */
+    }
+
+    .logo{
+        margin-right: 30px;
+    }
+
+    .search-txt{
+        width: 88%;
+    }
+
+    .socials-icons{
+        height: 5vh;
+        width: 5vh;
+        margin-right: 3px;
+    }
+
+    .nav-links{
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        height: 72.5vh;
+        top: 27.5vh;
+        background-color: rgb(2, 105, 110);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .body-text{
+        font-size: 35px;
+    }
+
+    .text1{
+        top: 40px;
+        left: 50px;
+    }
+    
+    .text2{
+        top: 110px;
+        left: 140px;
+    }
+    
+    .text3{
+        top: 180px;
+        left: 50px;
+    }
+
+    .search-trip{
+        padding: 0px 2%;
+    }
+    
+    .search-trip-text{
+        font-size: 14px;
+    }
+    
+    select{
+        display: flex;
+        outline: 0;
+        width: 100%;
+        height: 100%;
+        color: rgb(34, 34, 34);
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    .dropdowns{
+        display: flex;
+        line-height: 3;
+        border-radius: .25em;
+    }
+    
+    .drop-down{
+        width: 7em;
+        height: 2em;
+        margin-left: 5px;
+    }
+    
+    .srch-container{
+        margin-left: 5px;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
